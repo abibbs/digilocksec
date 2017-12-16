@@ -1,0 +1,231 @@
+
+/* Global Styles */
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  font-family: 'Source Sans Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.banner-header {
+  display: inline-block;
+  margin-top: 7%;
+  margin-top: 10%;
+  width: 100%;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.banner-header h1 {
+  font-size: 4.5em;
+  font-weight: 700;
+  margin: 0;
+  padding: 0;
+}
+
+.header-text {
+  display: inline-block;
+  padding-left: 10px;
+  padding-top: 10px;
+}
+
+.user-info {
+  display: inline-block;
+  position: absolute;
+  right: 0;
+  padding-top: 15px;
+}
+
+.user-header-style {
+  display: inline-block;
+}
+
+.header-username {
+  padding-right: 30px;
+}
+
+.header-settings {
+  padding-right: 0px;
+}
+
+.header-logout {
+  padding-right: 0px;
+}
+
+.user-header-style a {
+  color: #ffffff !important;
+  text-decoration: inherit !important;
+}
+
+.user-header-style a:hover {
+  font-weight: bold;
+}
+
+.user-header-style a::after {
+    display: block;
+    content: attr(data-text);
+    font-weight: bold;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+}
+
+.text-vertical-center {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.text-vertical-center h1 {
+  font-size: 4.5em;
+  font-weight: 700;
+  margin: 0;
+  padding: 0;
+}
+
+
+/* Custom Button Styles */
+.btn-dark {
+  color: #fff;
+  border: none;
+  border-radius: 0;
+  background-color: rgba(0, 0, 0, .4);
+}
+
+.btn-dark:hover, .btn-dark:focus, .btn-dark:active {
+  color: #fff;
+  background-color: rgba(0, 0, 0, .7);
+}
+
+.btn-black {
+  color: #fff;
+  border: none;
+  border-radius: 0;
+  background-color: #000;
+}
+
+.btn-black:hover, .btn-black:focus, .btn-black:active {
+  color: #000;
+  background-color: #fff;
+}
+
+.btn-light {
+  color: #333;
+  border: none;
+  border-radius: 0;
+  background-color: rgb(255, 255, 255);
+}
+
+.btn-light:hover, .btn-light:focus, .btn-light:active {
+  color: #333;
+  background-color: rgba(255, 255, 255, .8);
+}
+
+.bg-drk-grey {
+  background-color: #212529 !important;
+}
+
+.color-white {
+  color: #ffffff;
+}
+
+/* Custom Horizontal Rule */
+hr.small {
+  max-width: 100px;
+}
+
+/* Custom Text */
+.text-white {
+  color: #fff;
+}
+
+.icon-gray {
+  color: #a8aaad;
+}
+
+.helvetica-font {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.roboto-text {
+  font-family: Roboto,'Open Sans', tahoma, sans-serif;
+}
+
+/* Header */
+.header {
+  position: relative;
+  display: table;
+  width: 100%;
+  height: 60%;
+  background: url(../bg/joshua-earle-183442.jpg) no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+/* Main */
+.main {
+  padding: 50px 0;
+}
+
+/* Footer */
+footer {
+  padding: 30px 0;
+}
+
+#to-top {
+  font-size: 1em;
+  position: fixed;
+  right: 5px;
+  bottom: 5px;
+  display: none;
+  padding: 15px 20px;
+}
+
+.no-a-style a {
+  color: #212529 !important;
+  text-decoration: inherit !important;
+}
+
+.no-a-style a:hover {
+  color: #0069d9 !important;
+}
+
+/* Form css */
+.form-container {
+  max-width: 500px;
+  border: solid #f7f7f9;
+}
+
+.left-align {
+  text-align: left;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.font-unset {
+  font-weight: bold;
+  font-family: unset;
+  padding-top: 10px;
+}
+
+.color-red {
+  color: #ff0000;
+}
+
+.color-black {
+  color: ##000000;
+}
+
+.dis-none {
+  display: none;
+}
+
+#generic-warning {
+  padding-bottom: 15px;
+}
