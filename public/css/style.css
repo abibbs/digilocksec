@@ -64,12 +64,12 @@ body {
 }
 
 .user-header-style a::after {
-    display: block;
-    content: attr(data-text);
-    font-weight: bold;
-    height: 0;
-    overflow: hidden;
-    visibility: hidden;
+  display: block;
+  content: attr(data-text);
+  font-weight: bold;
+  height: 0;
+  overflow: hidden;
+  visibility: hidden;
 }
 
 .text-vertical-center {
