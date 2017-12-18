@@ -10,7 +10,7 @@ module.exports = function(req,res) {
     if (err) {
       console.log("error!",err);
     }
-
+    
     if (user) {
       user.password = createHash(pw);
 

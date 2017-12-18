@@ -6,7 +6,7 @@ sgMail.setApiKey(process.env.SENDGRID_API_KEY);
 
 module.exports = function(passport) {
 
-	passport.use('signup', new LocalStrategy({
+  passport.use('signup', new LocalStrategy({
     passReqToCallback : true // allows us to pass back the entire request to the callback
   },
   function(req, username, password, done) {
