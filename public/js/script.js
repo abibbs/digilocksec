@@ -84,9 +84,9 @@
         // validate password
         if (validPassword(password,confirm)) {
           let registerBody = {
-    		    "username": email,
+            "username": email,
             "password": password
-      		};
+          };
           let registerURL = '/sign-up';
           let registerCB = function(data, status) {
             if (typeof data.redirect == 'string') { window.location = data.redirect }
@@ -136,24 +136,24 @@
 
     // form isn't empty
     if (password && confirm) {
-        // validate password
-        if (validPassword(password,confirm)) {
+      // validate password
+      if (validPassword(password,confirm)) {
 
-          let updateBody = {}
-          updateUserData(function(data) {
-            updateBody['id'] = data.user._id;
-            updateBody['password'] = password;
-          },"api/user_data");
+        let updateBody = {}
+        updateUserData(function(data) {
+          updateBody['id'] = data.user._id;
+          updateBody['password'] = password;
+        },"api/user_data");
 
-          let updateURL = '/update-settings';
-          let updateCB = function(data, status) {
-            if (typeof data.redirect == 'string') { window.location = data.redirect }
-          };
+        let updateURL = '/update-settings';
+        let updateCB = function(data, status) {
+          if (typeof data.redirect == 'string') { window.location = data.redirect }
+        };
 
-          setTimeout(function() {
-            postRequest(updateBody,updateURL,updateCB);
-          },600);
-        }
+        setTimeout(function() {
+          postRequest(updateBody,updateURL,updateCB);
+        },600);
+      }
     } else {
       genWarning.removeClass('dis-none');
     }
